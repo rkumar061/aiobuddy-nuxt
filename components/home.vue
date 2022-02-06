@@ -33,6 +33,19 @@
             <a href="#headerC">Know More</a></button>
         </div>
         <div class="col">
+          <h3>Events</h3>
+          <br />
+          <img
+            src="https://img.icons8.com/ios-filled/100/000000/conference-foreground-selected.png"
+          />
+          <p>
+            <br /><br />
+            Public events in your locality ranging from a cricket match for the
+            evening to parties. <br /><br /><br />
+          </p>
+          <button class="butn" @click="eventclicked">Know More</button>
+        </div>
+        <div class="col">
           <h3>Drop By</h3>
           <br />
           <img
@@ -45,21 +58,9 @@
             Information about location in your locality like cafes, stores,
             stalls, spa. <br /><br /><br />
           </p>
-          <button class="butn">Know More</button>
+          <button class="butn" @click="dropbyclicked">Know More</button>
         </div>
-        <div class="col">
-          <h3>Events</h3>
-          <br />
-          <img
-            src="https://img.icons8.com/ios-filled/100/000000/conference-foreground-selected.png"
-          />
-          <p>
-            <br /><br />
-            Public events in your locality ranging from a cricket match for the
-            evening to parties. <br /><br /><br />
-          </p>
-          <button class="butn">Know More</button>
-        </div>
+        
       </div>
     </div>
   </section>
@@ -71,6 +72,12 @@ export default {
     serviceClicked() {
       this.$router.push('/app/services')
     },
+    eventclicked() {
+      this.$router.push('/app/events')
+    },
+    dropbyclicked() {
+      this.$router.push('/app/dropby')
+    }
   },
 };
 </script>

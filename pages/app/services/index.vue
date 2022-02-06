@@ -10,7 +10,7 @@
         :rating="service.rating"
       />
     </div>
-    <p v-else>select required Location</p>
+    <h1 v-else style="text-align:center">select required Location</h1>
     <locFilterComponent what="Services" @areaChanged="areaChanged" />
     <filter-component
       @servicetypechanged="servicetypechanged"

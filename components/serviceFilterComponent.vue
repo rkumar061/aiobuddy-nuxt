@@ -20,7 +20,7 @@
       </div>
 
       <div class="slidecontainer">
-        <p>Price (less then {{price}})</p>
+        <p>Price (less than {{price}})</p>
         <br />
         <input
           type="range"
@@ -107,7 +107,7 @@ export default {
   opacity: 0.7;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
-  background-color: rgba(2, 247, 255, 0.781);
+  background-color: rgba(32, 32, 32, 0.883);
 }
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;

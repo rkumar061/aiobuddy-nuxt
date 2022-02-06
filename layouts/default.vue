@@ -12,6 +12,9 @@ import HeaderComponent from "~/components/headerComponent.vue";
 import footerComponent from "~/components/footerComponent.vue";
 
 export default {
+    head: {
+        title: "AIO Buddy"
+    },
     components: {
         HeaderComponent,
         footerComponent
@@ -20,4 +23,7 @@ export default {
 </script>
 
 <style>
+html{
+    scroll-behavior: smooth;
+}
 </style>
